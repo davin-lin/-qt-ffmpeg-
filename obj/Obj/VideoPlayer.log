@@ -1,0 +1,6 @@
+﻿cl : 命令行 warning D9002: 忽略未知选项“-std=c++11”
+cl : 命令行 warning D9002: 忽略未知选项“-std=c++11”
+  VideoPlayer.cpp
+D:\vsdaima\VideoPlayer-rewrite\module\VideoPlayer\src\VideoPlayer\VideoPlayer.cpp(281,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\vsdaima\VideoPlayer-rewrite\module\VideoPlayer\src\VideoPlayer\VideoPlayer.cpp(179): warning C4700: 使用了未初始化的局部变量“wanted_spec”
+  VideoPlayer.vcxproj -> D:\vsdaima\VideoPlayer-rewrite\bin64\VideoPlayer.exe

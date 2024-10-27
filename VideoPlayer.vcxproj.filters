@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AppConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\VideoPlayer\src\Mutex\Cond.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\DragAbleWidget\DragAbleWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Base\FunctionTransfer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\VideoPlayer\src\LogWriter\LogWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\VideoPlayer\src\Mutex\Mutex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\VideoPlayer\src\VideoPlayer\Audio\PcmVolumeControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Widget\SetVideoUrlDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Widget\ShowVideoWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\VideoPlayer\src\VideoPlayer\Video\VideoFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\VideoPlayer\src\VideoPlayer\VideoPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\VideoPlayer\src\EventHandle\VideoPlayerEventHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\VideoPlayer\src\VideoPlayer\Audio\VideoPlayer_AudioThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\VideoPlayer\src\VideoPlayer\Video\VideoPlayer_VideoThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Widget\VideoSlider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Widget\mymessagebox_withTitle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\VideoPlayer\src\types.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AppConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="module\VideoPlayer\src\Mutex\Cond.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="module\DragAbleWidget\DragAbleWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Base\FunctionTransfer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="module\VideoPlayer\src\LogWriter\LogWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="module\VideoPlayer\src\Mutex\Mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="module\VideoPlayer\src\VideoPlayer\Audio\PcmVolumeControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Widget\SetVideoUrlDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Widget\ShowVideoWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="module\VideoPlayer\src\VideoPlayer\Video\VideoFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="module\VideoPlayer\src\EventHandle\VideoPlayerEventHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Widget\VideoSlider.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Widget\mymessagebox_withTitle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="module\VideoPlayer\src\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="obj\Moc\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="module\DragAbleWidget\DragAbleWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\Widget\SetVideoUrlDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\Widget\ShowVideoWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\Widget\mymessagebox_withTitle.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\image\audio.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\close_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\open_focus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\open_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\pause1_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\pause_focus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\pause_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="resources\resources.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="resources\image\showmaxsizebtn.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\showminisizebtn.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\shownormalbtn.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\start1_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\start_focus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\start_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\stop1_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\stop_focus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\stop_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\volume_mute.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\image\volume_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\resources\main.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="module\VideoPlayer\src\VideoPlayer\VideoPlayer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

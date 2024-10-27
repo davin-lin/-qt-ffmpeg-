@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C4BC210B-B67B-3F7A-BFB1-3525ADB8C600}</ProjectGuid>
+    <RootNamespace>VideoPlayer</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.22621.0</WindowsTargetPlatformMinVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>bin64\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>obj\Obj\</IntermediateDirectory>
+    <PrimaryOutput>VideoPlayer</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>bin64\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>obj\Obj\</IntermediateDirectory>
+    <PrimaryOutput>VideoPlayer</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>5.15.2_msvc2019_64</QtInstall>
+    <QtModules>core;network;gui;multimedia;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>5.15.2_msvc2019_64</QtInstall>
+    <QtModules>core;network;gui;multimedia;widgets</QtModules>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bin64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj\Obj\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VideoPlayer</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bin64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj\Obj\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VideoPlayer</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;module\VideoPlayer\src;module\VideoPlayer\lib;module\VideoPlayer\lib\win\ffmpeg\include;module\VideoPlayer\lib\win\SDL2\include;module\DragAbleWidget;src;obj\Moc;obj\Gui;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -std=c++11 -std=c++11 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>obj\Obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>obj\Obj\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\avcodec.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\avdevice.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\avfilter.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\avformat.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\avutil.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\postproc.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\swresample.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\swscale.lib;.\module\VideoPlayer\lib\win\SDL2\lib\x64\SDL2.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\module\VideoPlayer\lib\win\ffmpeg\lib\x64;.\module\VideoPlayer\lib\win\SDL2\lib\x64;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\VideoPlayer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./obj/Moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>obj\Moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <InitFuncName>resources</InitFuncName>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>obj\Gui</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;module\VideoPlayer\src;module\VideoPlayer\lib;module\VideoPlayer\lib\win\ffmpeg\include;module\VideoPlayer\lib\win\SDL2\include;module\DragAbleWidget;src;obj\Moc;obj\Gui;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -std=c++11 -std=c++11 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>obj\Obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>obj\Obj\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\avcodec.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\avdevice.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\avfilter.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\avformat.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\avutil.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\postproc.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\swresample.lib;.\module\VideoPlayer\lib\win\ffmpeg\lib\x64\swscale.lib;.\module\VideoPlayer\lib\win\SDL2\lib\x64\SDL2.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\module\VideoPlayer\lib\win\ffmpeg\lib\x64;.\module\VideoPlayer\lib\win\SDL2\lib\x64;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\VideoPlayer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./obj/Moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>obj\Moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>resources</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>obj\Gui</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AppConfig.cpp" />
+    <ClCompile Include="module\VideoPlayer\src\Mutex\Cond.cpp" />
+    <ClCompile Include="module\DragAbleWidget\DragAbleWidget.cpp" />
+    <ClCompile Include="src\Base\FunctionTransfer.cpp" />
+    <ClCompile Include="module\VideoPlayer\src\LogWriter\LogWriter.cpp" />
+    <ClCompile Include="src\MainWindow.cpp" />
+    <ClCompile Include="module\VideoPlayer\src\Mutex\Mutex.cpp" />
+    <ClCompile Include="module\VideoPlayer\src\VideoPlayer\Audio\PcmVolumeControl.cpp" />
+    <ClCompile Include="src\Widget\SetVideoUrlDialog.cpp" />
+    <ClCompile Include="src\Widget\ShowVideoWidget.cpp" />
+    <ClCompile Include="module\VideoPlayer\src\VideoPlayer\Video\VideoFrame.cpp" />
+    <ClCompile Include="module\VideoPlayer\src\VideoPlayer\VideoPlayer.cpp" />
+    <ClCompile Include="module\VideoPlayer\src\EventHandle\VideoPlayerEventHandle.cpp" />
+    <ClCompile Include="module\VideoPlayer\src\VideoPlayer\Audio\VideoPlayer_AudioThread.cpp" />
+    <ClCompile Include="module\VideoPlayer\src\VideoPlayer\Video\VideoPlayer_VideoThread.cpp" />
+    <ClCompile Include="src\Widget\VideoSlider.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Widget\mymessagebox_withTitle.cpp" />
+    <ClCompile Include="module\VideoPlayer\src\types.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AppConfig.h" />
+    <ClInclude Include="module\VideoPlayer\src\Mutex\Cond.h" />
+    <QtMoc Include="module\DragAbleWidget\DragAbleWidget.h" />
+    <QtMoc Include="src\Base\FunctionTransfer.h" />
+    <ClInclude Include="module\VideoPlayer\src\LogWriter\LogWriter.h" />
+    <QtMoc Include="src\MainWindow.h" />
+    <ClInclude Include="module\VideoPlayer\src\Mutex\Mutex.h" />
+    <ClInclude Include="module\VideoPlayer\src\VideoPlayer\Audio\PcmVolumeControl.h" />
+    <QtMoc Include="src\Widget\SetVideoUrlDialog.h" />
+    <QtMoc Include="src\Widget\ShowVideoWidget.h" />
+    <ClInclude Include="module\VideoPlayer\src\VideoPlayer\Video\VideoFrame.h" />
+    <QtMoc Include="module\VideoPlayer\src\VideoPlayer\VideoPlayer.h" />
+    <ClInclude Include="module\VideoPlayer\src\EventHandle\VideoPlayerEventHandle.h" />
+    <QtMoc Include="src\Widget\VideoSlider.h" />
+    <QtMoc Include="src\Widget\mymessagebox_withTitle.h" />
+    <ClInclude Include="module\VideoPlayer\src\types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="obj\Moc\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -std=c++11 -std=c++11 -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;obj\Moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj\Moc\moc_predefs.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -std=c++11 -std=c++11 -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;obj\Moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj\Moc\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="module\DragAbleWidget\DragAbleWidget.ui" />
+    <QtUic Include="src\MainWindow.ui" />
+    <QtUic Include="src\Widget\SetVideoUrlDialog.ui" />
+    <QtUic Include="src\Widget\ShowVideoWidget.ui" />
+    <QtUic Include="src\Widget\mymessagebox_withTitle.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\image\audio.png" />
+    <None Include="resources\image\close_normal.png" />
+    <None Include="resources\image\open_focus.png" />
+    <None Include="resources\image\open_normal.png" />
+    <None Include="resources\image\pause1_normal.png" />
+    <None Include="resources\image\pause_focus.png" />
+    <None Include="resources\image\pause_normal.png" />
+    <QtRcc Include="resources\resources.qrc" />
+    <None Include="resources\image\showmaxsizebtn.png" />
+    <None Include="resources\image\showminisizebtn.png" />
+    <None Include="resources\image\shownormalbtn.png" />
+    <None Include="resources\image\start1_normal.png" />
+    <None Include="resources\image\start_focus.png" />
+    <None Include="resources\image\start_normal.png" />
+    <None Include="resources\image\stop1_normal.png" />
+    <None Include="resources\image\stop_focus.png" />
+    <None Include="resources\image\stop_normal.png" />
+    <None Include="resources\image\volume_mute.png" />
+    <None Include="resources\image\volume_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\resources\main.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

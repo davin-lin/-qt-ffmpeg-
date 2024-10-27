@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoPlayer", "VideoPlayer.vcxproj", "{A2B51F31-A4E1-376B-BAFE-AF396E42860E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2B51F31-A4E1-376B-BAFE-AF396E42860E}.Debug|x64.ActiveCfg = Debug|x64
+		{A2B51F31-A4E1-376B-BAFE-AF396E42860E}.Debug|x64.Build.0 = Debug|x64
+		{A2B51F31-A4E1-376B-BAFE-AF396E42860E}.Release|x64.ActiveCfg = Release|x64
+		{A2B51F31-A4E1-376B-BAFE-AF396E42860E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50317C02-7604-4498-8CEC-FEB0CAFBDA58}
+	EndGlobalSection
+EndGlobal
