@@ -1,1 +1,1 @@
-# VideoPlayer-rewrite
+# 里面sdl部分我用qt自带的QAudioOutPut重新修改，但是sdl部分没删掉
